@@ -13,6 +13,7 @@
 		838DE9A6284A8DB90004643C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DE994284A8DB70004643C /* ContentView.swift */; };
 		838DE9A7284A8DB90004643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838DE995284A8DB90004643C /* Assets.xcassets */; };
 		838DE9A8284A8DB90004643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838DE995284A8DB90004643C /* Assets.xcassets */; };
+		838DE9B3284A915E0004643C /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 838DE9B2284A915E0004643C /* LoremSwiftum */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838DE9B3284A915E0004643C /* LoremSwiftum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = "SampleProject (iOS)";
+			packageProductDependencies = (
+				838DE9B2284A915E0004643C /* LoremSwiftum */,
+			);
 			productName = "SampleProject (iOS)";
 			productReference = 838DE99A284A8DB90004643C /* SampleProject.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 838DE98D284A8DB60004643C;
+			packageReferences = (
+				838DE9B1284A915E0004643C /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+			);
 			productRefGroup = 838DE99B284A8DB90004643C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,6 +458,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		838DE9B1284A915E0004643C /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		838DE9B2284A915E0004643C /* LoremSwiftum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 838DE9B1284A915E0004643C /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			productName = LoremSwiftum;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 838DE98E284A8DB60004643C /* Project object */;
 }
